@@ -1,6 +1,15 @@
 # Banknote Authentication Classification
 
-### Author: Kouretas Panagtiotis-Theodoros E19072
+### Author: Kouretas Panagtiotis
+
+## Dependencies
+
+![pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white)
+![numpy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)
+![matplotlib](https://img.shields.io/badge/matplotlib-%231DB2F5.svg?style=flat&logo=matplotlib&logoColor=white)
+![seaborn](https://img.shields.io/badge/seaborn-%2300B4D8.svg?style=flat&logoColor=white)
+
 
 ## Overview
 This notebook explores the classification of banknotes as genuine or forged using a dataset containing features extracted from images of banknote-like specimens. These images were digitized using an industrial camera typically used for print inspection, with a resolution of about 660 dpi.
@@ -57,13 +66,6 @@ Several classification algorithms are applied to the dataset:
 
 ## Conclusion
 - Summarizing the findings and determining the most effective classification algorithm based on the evaluation metrics.
-
-## Dependencies
-- pandas
-- numpy
-- scikit-learn
-- matplotlib
-- seaborn
 
 ## How to Run
 1. Ensure all dependencies are installed.
