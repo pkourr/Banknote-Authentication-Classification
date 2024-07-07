@@ -1,12 +1,73 @@
-In this notebook, we will be working with a dataset that contains information extracted from images of genuine and forged banknote-like specimens. The data were digitized using an industrial camera typically used for print inspection. The images have a resolution of about 660 dpi.
+# Banknote Authentication Classification
 
-The dataset contains the following features:
+### Author: Kouretas Panagtiotis-Theodoros E19072
 
-Variance of Wavelet Transformed image (continuous)
-Skewness of Wavelet Transformed image (continuous)
-Curtosis of Wavelet Transformed image (continuous)
-Entropy of image (continuous)
-Class (integer)
-The 'Class' feature is our target variable. It indicates whether the banknote is genuine or forged.
+## Overview
+This notebook explores the classification of banknotes as genuine or forged using a dataset containing features extracted from images of banknote-like specimens. These images were digitized using an industrial camera typically used for print inspection, with a resolution of about 660 dpi.
 
-We will apply various classification algorithms to this dataset and compare their performance. The goal is to determine which algorithm is most effective for this particular task.
+## Dataset
+The dataset consists of the following features:
+1. **Variance** of Wavelet Transformed image (continuous)
+2. **Skewness** of Wavelet Transformed image (continuous)
+3. **Curtosis** of Wavelet Transformed image (continuous)
+4. **Entropy** of image (continuous)
+5. **Class** (integer) - the target variable indicating whether the banknote is genuine or forged.
+
+## Objectives
+The primary goal is to apply various classification algorithms to this dataset and compare their performance to determine the most effective method for this classification task.
+
+## Content Summary
+
+### 1. Introduction
+- Overview of the dataset and the problem statement.
+
+### 2. Importing Libraries and Loading the Dataset
+- Importing necessary libraries such as pandas, numpy, scikit-learn, matplotlib, and seaborn.
+- Loading the dataset from a URL and assigning column names.
+
+### 3. Data Exploration
+- Displaying the first few rows of the dataset.
+- Checking for missing values.
+- Analyzing the distribution of the target variable.
+- Descriptive statistics of the dataset.
+- Visualizing the distribution of features using histograms.
+- Creating a correlation matrix and visualizing it using a heatmap.
+
+### 4. Data Preprocessing
+- Splitting the dataset into training and testing sets.
+- Standardizing the features using `StandardScaler`.
+
+### 5. Model Training and Evaluation
+Several classification algorithms are applied to the dataset:
+- **Logistic Regression**
+  - Training and evaluating a logistic regression model.
+  - Printing accuracy, confusion matrix, and classification report.
+- **Support Vector Machine (SVM)**
+  - Training and evaluating an SVM model.
+  - Printing accuracy, confusion matrix, and classification report.
+- **Decision Tree**
+  - Training and evaluating a decision tree model.
+  - Printing accuracy, confusion matrix, and classification report.
+- **Random Forest**
+  - Training and evaluating a random forest model.
+  - Printing accuracy, confusion matrix, and classification report.
+
+### 6. Model Comparison
+- Comparing the accuracy scores and classification reports from the different models to identify the best performing model.
+
+## Conclusion
+- Summarizing the findings and determining the most effective classification algorithm based on the evaluation metrics.
+
+## Dependencies
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+
+## How to Run
+1. Ensure all dependencies are installed.
+2. Open the notebook and run the cells sequentially to load the dataset, preprocess the data, train the models, and evaluate their performance.
+
+## Acknowledgements
+- The dataset used in this project is publicly available from the UCI Machine Learning Repository.
