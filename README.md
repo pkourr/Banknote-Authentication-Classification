@@ -71,5 +71,3 @@ Several classification algorithms are applied to the dataset:
 1. Ensure all dependencies are installed.
 2. Open the notebook and run the cells sequentially to load the dataset, preprocess the data, train the models, and evaluate their performance.
 
-## Acknowledgements
-- The dataset used in this project is publicly available from the UCI Machine Learning Repository.
